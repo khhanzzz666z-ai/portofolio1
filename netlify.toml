@@ -1,0 +1,6 @@
+[build]
+  publish = "."
+  command = ""
+
+# Netlify will publish the repository root as this is a single static HTML site.
+# If you later add a build step (e.g., a bundler), set `command` accordingly.
