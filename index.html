@@ -673,6 +673,7 @@
         }
       }
 
+      /* Tablet (768px and below) */
       @media (max-width: 768px) {
         .about-container {
           grid-template-columns: 1fr;
@@ -694,6 +695,36 @@
         .avatar-box {
           width: 140px;
           height: 140px;
+        }
+
+        .project-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .projects {
+          padding: 3rem 1rem;
+        }
+
+        .projects h2 {
+          font-size: 2rem;
+          margin-bottom: 2rem;
+        }
+
+        .skills {
+          padding: 3rem 1rem;
+        }
+
+        .skills h2 {
+          font-size: 2rem;
+        }
+
+        .skill-list {
+          gap: 0.8rem;
+        }
+
+        .skill-item {
+          padding: 0.8rem 1.5rem;
+          font-size: 0.95rem;
         }
       }
 
@@ -934,24 +965,81 @@
         border-top: 1px solid #333;
       }
 
-      @media (max-width: 768px) {
-        .welcome-message h1 {
-          font-size: 2.5rem;
-        }
-        .hero h1 {
-          font-size: 2rem;
-        }
-        .social-icon {
-          width: 50px;
-          height: 50px;
-          font-size: 1.5rem;
-        }
-        .contact h2 {
-          font-size: 2rem;
-        }
+      @media (max-width: 968px) {
         .contact-container {
           grid-template-columns: 1fr;
           gap: 2rem;
+        }
+
+        .contact {
+          padding: 3rem 1rem;
+        }
+
+        .contact h2 {
+          font-size: 2rem;
+        }
+
+        .contact-subtitle {
+          font-size: 1rem;
+        }
+      }
+
+      /* Mobile (576px and below) */
+      @media (max-width: 576px) {
+        .welcome-message h1 {
+          font-size: 2rem;
+        }
+
+        .welcome-message p {
+          font-size: 1rem;
+        }
+
+        .hero {
+          padding: 3rem 1rem;
+        }
+
+        .hero h1 {
+          font-size: 1.8rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+          font-size: 1rem;
+        }
+
+        .hero-subtitle {
+          font-size: 1rem;
+          margin-bottom: 1rem;
+        }
+
+        .btn {
+          padding: 0.8rem 1.5rem;
+          font-size: 0.95rem;
+          margin: 0.5rem 0;
+          display: block;
+          width: 100%;
+          text-align: center;
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        .social-links {
+          gap: 1rem;
+          margin-top: 1.5rem;
+        }
+
+        .social-icon {
+          width: 45px;
+          height: 45px;
+          font-size: 1.3rem;
+        }
+
+        header {
+          padding: 1rem;
+        }
+
+        .logo {
+          font-size: 1.3rem;
         }
 
         /* Show hamburger on mobile */
@@ -964,8 +1052,147 @@
           display: none;
         }
 
-        header {
+        .sidebar {
+          width: 250px;
+          padding: 4rem 1.5rem 1.5rem;
+        }
+
+        .sidebar-nav {
+          gap: 1.5rem;
+        }
+
+        .sidebar-nav a {
+          font-size: 1.1rem;
+          padding: 0.8rem;
+        }
+
+        .about {
+          padding: 3rem 1rem;
+        }
+
+        .about-avatar {
+          margin-bottom: 1.5rem;
+        }
+
+        .avatar-box {
+          width: 130px;
+          height: 130px;
+        }
+
+        .about-content h2 {
+          font-size: 1.5rem;
+        }
+
+        .about-content p {
+          font-size: 0.95rem;
+          line-height: 1.6;
+        }
+
+        .about-highlight {
+          font-size: 0.9rem;
+          padding: 0.4rem 0.8rem;
+        }
+
+        .contact {
+          padding: 3rem 1rem;
+        }
+
+        .contact-label {
+          font-size: 0.85rem;
+        }
+
+        .contact h2 {
+          font-size: 1.8rem;
+        }
+
+        .contact-subtitle {
+          font-size: 0.95rem;
+          margin-bottom: 2rem;
+        }
+
+        .contact-info h3 {
+          font-size: 1.3rem;
+        }
+
+        .contact-info p {
+          font-size: 0.95rem;
+        }
+
+        .contact-item {
+          padding: 1rem;
+          margin-bottom: 0.8rem;
+        }
+
+        .contact-icon {
+          width: 45px;
+          height: 45px;
+          font-size: 1.3rem;
+        }
+
+        .contact-details label {
+          font-size: 0.8rem;
+        }
+
+        .contact-details a {
+          font-size: 1rem;
+        }
+
+        .form-group label {
+          font-size: 0.9rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+          padding: 0.8rem;
+          font-size: 0.95rem;
+        }
+
+        .form-group textarea {
+          min-height: 120px;
+        }
+
+        .submit-btn {
+          padding: 0.8rem 1.5rem;
+          font-size: 1rem;
+        }
+
+        footer {
           padding: 1.5rem;
+          font-size: 0.9rem;
+        }
+      }
+
+      /* Tablets (577px to 768px) */
+      @media (min-width: 577px) and (max-width: 768px) {
+        .hero {
+          padding: 4rem 2rem;
+        }
+
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .btn {
+          margin: 0.5rem 0.3rem;
+        }
+
+        .contact-container {
+          gap: 2rem;
+        }
+      }
+
+      /* Large Desktop (1200px+) */
+      @media (min-width: 1200px) {
+        .projects,
+        .about,
+        .skills,
+        .contact {
+          max-width: 1400px;
+          margin: 0 auto;
+        }
+
+        .project-grid {
+          grid-template-columns: repeat(3, 1fr);
         }
       }
     </style>
@@ -1217,7 +1444,11 @@
       <div class="about-container">
         <div class="about-avatar scroll-in-left">
           <div class="avatar-box">
-            <img src="assets/images/avatar.png" alt="HannKey Avatar" class="avatar-img" />
+            <img
+              src="assets/images/avatar.png"
+              alt="HannKey Avatar"
+              class="avatar-img"
+            />
           </div>
         </div>
 
