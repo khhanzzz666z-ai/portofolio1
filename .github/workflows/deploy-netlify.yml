@@ -23,8 +23,8 @@ jobs:
 
       - name: Deploy to Netlify (production)
         env:NETLIFY_AUTH_TOKEN
-     NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+     NETLIFY_AUTH_TOKEN: ${{ secrets.nfp_XWC1zLx9ApD42dYj8jHVdpM3v5Sx6Y4X05d7 }}
+        NETLIFY_SITE_ID: ${{ secrets.cbb95a1a-ed28-4a80-bfed-c3fa683daa2a }}
         run: |
           # Deploy the repository root as a static site
           netlify deploy --dir=. --prod --auth "$NETLIFY_AUTH_TOKEN" --site "$NETLIFY_SITE_ID"
